@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    background-color: #fdf4f4;
+}
+header{
+    display: flex;
+    background-color: white;
+    height: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0ecec;
+    
+}
+.logoclass{
+    height: 36px;
+    width: 53px;
+}
+.logo-container{
+    margin-left: 4%;
+}
+.action-bar{
+    margin-right: 4%;
+}
+.nav-bar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+    
+}
+
+.nav-bar a{
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 28px 0;
+    border-bottom: 5px solid white;
+}
+.nav-bar a:hover{
+    border-bottom: 5px solid #f54e77;
+}
+.nav-bar a sup{
+    color: red;
+    font-size: 10px;
+}   
+.search-bar{
+    height: 40px;
+    min-width: 300px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.search-icon{
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-input{
+    flex-grow: 1;
+    color: #696e79;
+    background-color: #f5f5f6;
+    height: 40px;
+    border: 0;
+    border-radius: 0px 4px 4px 0px;
+}
+.baglink{
+    text-decoration: none;
+}
+
+.action-bar{
+    display: flex ;
+    min-width: 70px;
+    justify-content: space-evenly;
+}
+.action-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-container{
+    margin: 30px 0;
+}
+.banner-img{
+    width: 100%;
+}
+.category-heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    /* margin: 50px 0 10px 30px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    max-height: 5em;
+    font-weight: 700;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-image: radial-gradient(whitesmoke,#475569) ;
+}
+
+
+.footer-container{
+    padding: 30px 0px 40px 0px;
+    background: #fafbfc;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+}
+.footer-column h3{
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer-column a{
+    text-decoration: none;
+    color: #696b79;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.copyright{
+    text-align: end;
+    color: #94969f;
+    padding: 15px;
+}
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item-container{
+    width: 250px;
+    margin: 10px;
+}
+.items-container{
+    width: 80%;
+    margin: 40px 10%;
+}
+.item-container{
+    width: 250px;
+}
+.itemimg{
+    width: 100%;
+}
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+.companyname{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.itemname{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+.price{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #282c3f;
+    line-height: 15px;
+    white-space: nowrap;
+}
+.currentprice{
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 700;
+}
+.originalprice{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.btn-add-bag{
+    margin-top: 8px;
+    background-color: rgb(31, 253, 31);
+    width: 100%;
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bag-item-count{
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #ffffff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.action-container{
+    text-decoration: none;
+}
+a.action-container:link{
+    color: black;
+}
